@@ -8,7 +8,7 @@ InstallKeybdHook
 passthrough_processes := ["example.exe"]
 
 For p in passthrough_processes {
-  GroupAdd "Untargetted", "ahk_exe "
+  GroupAdd "Untargetted", "ahk_exe " p
 }
 
 #HotIf not WinActive("ahk_group Untargetted") 
